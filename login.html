@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/mystyle.css" />
+  </head>
+  <body>
+    <!-- Navbar & Header Section -->
+    <div class="landing_header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="img/logo.png" alt="Kathputli Toys"
+            /></a>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Products</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="Locate_vendors.html">Locate Vendors</a></li>
+              <li><a href="login.html">Account</a></li>
+            </ul>
+          </nav>
+          <img src="img/cart.png" class="carticon" alt="cart icon" />
+          <img
+            src="img/menu.png"
+            class="menuicon"
+            alt="Menu icon"
+            onclick="menuToggle();"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Section -->
+    <section class="login">
+      <div class="container">
+        <div class="button-container">
+          <button id="cust" class="active-button">Customer</button>
+          <button id="vend">Vendor</button>
+        </div>
+        <div class="form-box">
+          <!-- <form action="" enctype="text/plain" target="hidden_iframe"> -->
+          <div class="form-value" id="signin-form">
+            <form
+              id = "login-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSfTRKl39vYiVxfQsXzLgzBN2TL9nPIuF1z5rsDLdymysTea3A/formResponse"
+              enctype="text/plain"
+              target="hidden_iframe"
+            >
+              <h2>Login</h2>
+              <div class="inputbox">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <input
+                  type="text"
+                  required
+                  id="Username_Email1"
+                  name="entry.172217741"
+                />
+                <label for="">Username or Email</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input
+                  type="password"
+                  required
+                  id="password"
+                  name="entry.394598992"
+                />
+                <label for="">Password</label>
+              </div>
+              <div class="forget">
+                <label for=""><input type="checkbox" />Remember Me</label>
+                <a href="#">Forgot Password</a>
+              </div>
+              <button>Log in</button>
+              <div class="register">
+                <p>
+                  Don't have an account?
+                  <a href="#" onclick="toggleForm()">Register</a>
+                </p>
+              </div>
+            </form>
+            <iframe
+              id="hidden_iframe"
+              name="hidden_iframe"
+              style="display: none"
+            ></iframe>
+          </div>
+          <div class="form-value" id="signup-form" style="display: none">
+            <form
+              id="register-form"
+              action="https://docs.google.com/forms/d/e/1FAIpQLSdKTxUBo--PNH9NKHaLNz5oY_e0CTgY4hYfyR6Ff4nLBfAxmA/formResponse"
+              enctype="text/plain"
+              target="hidden_iframe"
+            >
+              <h2>Register</h2>
+              <div class="inputbox">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <input
+                  type="text"
+                  required
+                  id="username_email_register_vendor"
+                  name="entry.1900639717"
+                />
+                <label for="">Username or Email</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input
+                  type="password"
+                  required
+                  id="password_reg_vendor"
+                  name="entry.1749676172"
+                />
+                <label for="">Password</label>
+              </div>
+              <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input
+                  type="password"
+                  required
+                  id="confirm_password_vendor"
+                  name="entry.622661786"
+                />
+                <label for="">Confirm Password</label>
+              </div>
+              <button>Register</button>
+              <div class="register">
+                <p>
+                  Already have an account?
+                  <a href="#" onclick="toggleForm()">Login</a>
+                </p>
+              </div>
+            </form>
+            <iframe
+              id="hidden_iframe"
+              name="hidden_iframe"
+              style="display: none"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Get our mobile app for the best shopping experience on your
+              Android and iOS devices.
+            </p>
+            <div class="app-logo">
+              <img src="img/play-store.png" alt="Google Play Store" />
+              <img src="img/app-store.png" alt="Apple App Store" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="img/logo.png" alt="Kathputli Toys" />
+            <p>
+              Bringing the magic of traditional Indian toys to your doorstep.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="">Coupons</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright &copy; 2023 - Team Kathputli</p>
+      </div>
+    </div>
+
+    <!-- JavaScript files here -->
+    <script src="js/all.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/login.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

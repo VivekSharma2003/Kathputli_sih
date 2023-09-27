@@ -1,0 +1,171 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+.landing_header {
+    background: radial-gradient(#e1d1da, #ffd6d6);
+	 /* min-height: 10vh;  */
+}
+
+/* Style the back-to-main-page link */
+.back-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Style the product details section */
+
+/*.About_us {
+    background-color: #ece9eb;
+    padding: 20px;
+    /* margin-top: 20px; */
+    /* text-align: center;
+    height: 400px;
+    width: auto;
+} */
+
+/* .About_us .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Style the About Us section */
+/* Style the About Us section */
+/* Style the About Us and Our Vision section */
+/* Style the About Us and Our Vision section (unchanged) */
+
+/* Style the Meet Our Team section (unchanged) */
+/* Style the About Us and Our Vision section */
+.About_us {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.About_us .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Style the About Us and Our Vision content */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content,
+.vision-content {
+    flex-basis: calc(50% - 20px); /* Adjust the width as needed */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.about-content:hover,
+.vision-content:hover {
+    transform: translateY(-10px);
+}
+
+/* Style the headings with colorful fonts */
+.about-content h2,
+.vision-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    background: linear-gradient(45deg, #ff0066, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-content p,
+.vision-content p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Style the About Us and Our Vision section (unchanged) */
+
+/* Style the Team Members section (below About Us and Our Vision) */
+.Team_members {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+}
+
+.Team_members .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Style the team members (same styles as before) */
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #5e29c8;
+    background: linear-gradient(45deg, #3d5dbd, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+.Team_members h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    background: linear-gradient(45deg, #ff0066, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Additional styles as needed */

@@ -1,0 +1,131 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+.landing_header {
+    background: radial-gradient(#e1d1da, #ffd6d6);
+}
+
+/* Style the Locate Vendor section */
+.locate_vendors {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.locate_vendors .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.locate_vendors h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #a8071a, #a8071a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.locate_vendors p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.vendor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vendor {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vendor img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.vendor-details {
+    flex: 1;
+}
+
+.vendor h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    background: linear-gradient(45deg, #2173d7, #ff3366);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vendor p {
+    font-size: 16px;
+    color: #777;
+}
+
+.locate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.locate-button:hover {
+    background-color: #ff0066;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: pink;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* ... Your additional styles ... */
